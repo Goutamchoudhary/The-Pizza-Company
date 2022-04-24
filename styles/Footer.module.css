@@ -1,0 +1,64 @@
+.container{
+    height: calc(100vh - 100px);
+    background-color: #222;
+    display: flex;
+    margin-top: 80px;
+}
+
+.item{
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.item:last-child{
+    flex: 2;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.wrapper{
+    flex: 1;
+    position: relative;
+    display: flex;
+}
+
+.wrapper:first-child{
+    flex:2;
+}
+
+.card{
+    flex: 1;
+    padding: 0 20px;
+}
+
+.contact{
+    color: #b7903c;
+    font-size: 18px;
+}
+
+.phoneNumber{
+    font-size: 15px;
+    color: lightgray;
+}
+
+.title{
+    font-size: 18px;
+    color: #b7903c;
+}
+
+.text{
+    color: lightgray;
+    font-size: 15px;
+}
+
+.ownerDesc{
+    margin-top: 60px;
+    margin-left:110px;
+    padding-top: 60px;
+    padding-left: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
