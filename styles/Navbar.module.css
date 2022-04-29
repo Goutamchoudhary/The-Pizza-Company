@@ -58,12 +58,18 @@
 .listItem{
     margin: 23px;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.listItem:hover{
+    color: lightgray;
 }
 
 .cart{
     position: relative;
     padding-top: 12px;
     padding-right: 12px;
+    cursor: pointer;
 }
 
 .counter{

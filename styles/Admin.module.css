@@ -1,0 +1,51 @@
+.container{
+    padding: 50px;
+    display: flex;
+}
+
+.item{
+    flex: 1;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 20px;
+    text-align: left;
+}
+
+.button{
+    border: none;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.button:first-child{
+    background-color: teal;
+    margin-right: 10px;
+}
+
+.button:first-child:hover{
+    background-color: rgb(0, 193, 193);
+}
+
+.button:last-child{
+    background-color: crimson;
+}
+
+.button:last-child:hover{
+    background-color: rgb(255, 81, 115);
+}
+
+.nextButton{
+    background-color: rgb(5, 187, 5);
+    border: none;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.nextButton:hover{
+    background-color: rgb(3, 116, 3);
+
+}

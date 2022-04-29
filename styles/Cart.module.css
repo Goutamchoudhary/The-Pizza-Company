@@ -20,6 +20,7 @@
 .table{
     width: 100%;
     border-spacing: 20px;
+    text-align: left;
 }
 
 .name{
@@ -51,11 +52,11 @@
 }
 
 .totalTextTitle{
-    margin-right: 70px;
+    margin-right: 50px;
 }
 
-.totalTextTitle:nth-child(3){
-    margin-right: 120px;
+.totalTextTitle:nth-child(1){
+    margin-right: 30px;
 }
 
 .button{
@@ -66,3 +67,23 @@
     margin-top: 20px;
 }
 
+.paymentMethods{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.payButton{
+    padding: 10px 5px;
+    margin-bottom: 5px;
+    background-color: white;
+    color: teal;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.payButton:hover{
+    background-color: teal;
+    color: white;
+}
