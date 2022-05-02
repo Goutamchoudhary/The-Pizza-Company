@@ -1,5 +1,5 @@
 {
-  "name": "food-ordering-app",
+  "name": "the-pizza-company",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -28,6 +28,7 @@
     "redux": "^4.2.0"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.5"
   }
