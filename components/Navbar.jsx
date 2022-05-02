@@ -23,10 +23,8 @@ const Navbar = () => {
                     <Link href={"/"} passHref>
                         <li className={styles.listItem}>Home</li>
                     </Link>
-                    <li className={styles.listItem}>Products</li>
-                    <li className={styles.listItem}>Menu</li>
+                    <li className={styles.listItem}>Orders</li>
                     <Image src="/images/pizza-company-logo.png" alt="" width={150} height={90}/>
-                    <li className={styles.listItem}>Events</li>
                     <li className={styles.listItem}>About</li>
                     <li className={styles.listItem}>Contact</li>
                 </ul>

@@ -31,7 +31,8 @@ const Cart = () => {
     }
 
     const [open, setOpen] = useState(false);
-    const [cash, setCash] = useState(false);
+    // const [cash, setCash] = useState(false);
+    const [close, setClose] = useState(true);
 
     // These values are the props in the UI
     const amount = cart.total;
@@ -172,7 +173,7 @@ const Cart = () => {
                         <div className={styles.paymentMethods}>
                             <button 
                                 className={styles.payButton}
-                                onClick={()=> setCash(true)}
+                                onClick={()=> setClose(false)}
                             >
                                 CASH ON DELIVERY
                             </button>
@@ -199,7 +200,10 @@ const Cart = () => {
                         </button>
                     )}
                     
-                    {cash && <OrderDetails total={cart.total} createOrder={createOrder} />}
+                    {!close && <OrderDetails 
+                                total={cart.total} 
+                                createOrder={createOrder} 
+                                setClose={setClose}/>}
                     
                 </div>
             </div>
