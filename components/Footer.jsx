@@ -22,23 +22,23 @@ const Footer = () => {
                     <div className={styles.card}>
                         <h1 className={styles.title}>FIND OUR RESTAURANTS</h1>
                         <p className={styles.text}>
-                            222 Sushant Lok, Phase I
+                            222 DLF, Phase I
                             <br /> Gurugram, Haryana
                             <br /> India
                         </p>
                         <p className={styles.text}>
-                            222 Sushant Lok, Phase I
-                            <br /> Gurugram, Haryana
+                            333 Nehru Place, Phase I
+                            <br /> Delhi, South District
                             <br /> India
                         </p>
                         <p className={styles.text}>
-                            222 Sushant Lok, Phase I
-                            <br /> Gurugram, Haryana
+                            444 Lajpat Nagar
+                            <br /> Delhi, South District
                             <br /> India
                         </p>
                         <p className={styles.text}>
-                            222 Sushant Lok, Phase I
-                            <br /> Gurugram, Haryana
+                            555 Hudson Lane, GTB Nagar,
+                            <br /> Delhi, North District
                             <br /> India
                         </p>
                     </div>

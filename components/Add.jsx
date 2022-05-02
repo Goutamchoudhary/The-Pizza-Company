@@ -39,7 +39,7 @@ const Add = ({ setClose }) => {
 
             // nextjs doesnt allow any external url to show images, we have to configure that first in next.config
             // file
-            await axios.post("http://localhost:3000/api/products", newProduct);
+            await axios.post("/api/products", newProduct);
             setClose(true);
         }catch(err){
             console.log(err);
