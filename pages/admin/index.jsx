@@ -11,8 +11,12 @@ const Index = ({orders, products}) => {
 
     const handleDelete = async(id) => {
         try{
+            let dev = process.env.NODE_ENV !== 'production';
+            let PROD_URL = process.env.PROD_URL;
+            let DEV_URL = process.env.DEV_URL;
+
             setPizzaList(pizzaList.filter((pizza) => pizza._id !== id));
-            await axios.delete("http://localhost:3000/api/products/" + id);
+            await axios.delete(`${dev ? DEV_URL : PROD_URL}/api/products/` + id);
             
         }catch(err){
             console.log(err);
@@ -24,7 +28,11 @@ const Index = ({orders, products}) => {
         const currentStatus = item.status;
 
         try{
-            const res = await axios.put("http://localhost:3000/api/orders/" + id, 
+            let dev = process.env.NODE_ENV !== 'production';
+            let PROD_URL = process.env.PROD_URL;
+            let DEV_URL = process.env.DEV_URL;
+
+            const res = await axios.put(`${dev ? DEV_URL : PROD_URL}/api/orders/` + id, 
                         {
                             status: currentStatus+1
                         }

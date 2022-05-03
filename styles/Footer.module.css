@@ -54,9 +54,8 @@
 }
 
 .ownerDesc{
-    margin-top: 60px;
     margin-left:110px;
-    padding-top: 60px;
+    padding-top: 30px;
     padding-left: 110px;
     display: flex;
     align-items: center;

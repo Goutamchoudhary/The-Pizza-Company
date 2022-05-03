@@ -9,13 +9,13 @@
     justify-content: center;
     color: black;
     z-index: 999;
-    background-color: rgba(128, 128, 128, 0.698);
+    background-color: rgba(94, 94, 94, 0.6);
 }
 
 .wrapper{
     width: 500px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 35px;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -36,8 +36,8 @@
     font-weight: 500;
     cursor: pointer;
     position: absolute;
-    top: -10px;
-    right: -10px;
+    top: -8px;
+    right: -8px;
 }
 
 .title{
