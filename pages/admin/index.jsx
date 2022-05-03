@@ -32,12 +32,18 @@ const Index = ({orders, products}) => {
             let PROD_URL = process.env.PROD_URL;
             let DEV_URL = process.env.DEV_URL;
 
-            const res = await axios.put(`${dev ? DEV_URL : PROD_URL}/api/orders/` + id, 
-                        {
-                            status: currentStatus+1
-                        }
-            );
-            setOrderList([res.data, ...orderList.filter((order) => order._id !== id)]);
+            if(currentStatus === 3){
+                setOrderList(orderList.filter((order) => order._id !== id));
+                await axios.delete(`${dev ? DEV_URL : PROD_URL}/api/orders/` + id);
+            }
+            else{
+                const res = await axios.put(`${dev ? DEV_URL : PROD_URL}/api/orders/` + id, 
+                            {
+                                status: currentStatus+1
+                            }
+                );
+                setOrderList([res.data, ...orderList.filter((order) => order._id !== id)]);
+            }
 
         }catch(err){
             console.log(err);
