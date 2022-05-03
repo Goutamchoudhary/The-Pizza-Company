@@ -12,7 +12,7 @@
     flex-direction: column;
 }
 
-.item:last-child{
+.item:first-child{
     flex: 2;
     padding: 50px;
     justify-content: space-between;

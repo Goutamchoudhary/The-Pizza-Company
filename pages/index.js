@@ -41,8 +41,11 @@ export const getServerSideProps = async(context) => {
     if(myCookie.token === process.env.TOKEN){
         admin = true;
     }
-    
-    const res = await axios.get("/api/products");
+    // get the current environment
+    let dev = process.env.NODE_ENV !== 'production';
+    let { DEV_URL, PROD_URL } = process.env;
+
+    const res = await axios.get(`${dev ? DEV_URL : PROD_URL}/api/products`);
 
     return {
       props:{

@@ -6,9 +6,6 @@ const Footer = () => {
     return (
         <div className={styles.container}>
             <div className={styles.item}>
-                <Image src="/images/footer-3.jpg" objectFit='cover' alt='' layout='fill'/>
-            </div>
-            <div className={styles.item}>
                 <div className={styles.wrapper}>
                     <div className={styles.card}>
                         <h2 className={styles.contact}>
@@ -27,18 +24,23 @@ const Footer = () => {
                             <br /> India
                         </p>
                         <p className={styles.text}>
-                            333 Nehru Place, Phase I
+                            333/A2, Nehru Place, Phase I
                             <br /> Delhi, South District
                             <br /> India
                         </p>
                         <p className={styles.text}>
-                            444 Lajpat Nagar
+                            444/B3, Lajpat Nagar,
                             <br /> Delhi, South District
                             <br /> India
                         </p>
                         <p className={styles.text}>
-                            555 Hudson Lane, GTB Nagar,
+                            555/C5, Hudson Lane, GTB Nagar,
                             <br /> Delhi, North District
+                            <br /> India
+                        </p>
+                        <p className={styles.text}>
+                            666/A1, Pitampura, TV tower,
+                            <br /> Delhi, West District,
                             <br /> India
                         </p>
                     </div>
@@ -59,6 +61,9 @@ const Footer = () => {
                         © 2022 Gautam Choudhary
                     </h2>
                 </div>
+            </div>
+            <div className={styles.item}>
+                <Image src="/images/footer-3.jpg" objectFit='cover' alt='' layout='fill'/>
             </div>
         </div>
     );
