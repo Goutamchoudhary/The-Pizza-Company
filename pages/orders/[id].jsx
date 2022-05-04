@@ -93,10 +93,10 @@ const Order = ({ order }) => {
 
 export const getServerSideProps = async ({params}) => {
     
-    let dev = process.env.NODE_ENV !== 'production';
-    let { DEV_URL, PROD_URL } = process.env;
+    // let dev = process.env.NODE_ENV !== 'production';
+    // let { DEV_URL, PROD_URL } = process.env;
 
-    const res = await axios.get(`${dev ? DEV_URL : PROD_URL}/api/orders/${params.id}`);
+    const res = await axios.get(`${process.env.SERVER}/api/orders/${params.id}`);
 
     return {
         props:{

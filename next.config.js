@@ -5,8 +5,7 @@ const nextConfig = {
     domains:["res.cloudinary.com"]
   },
   env: {
-    DEV_URL : process.env.DEV_URL,
-    PROD_URL : process.env.PROD_URL,
+    SERVER : process.env.SERVER,
   },
 }
 

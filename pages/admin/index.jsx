@@ -11,12 +11,8 @@ const Index = ({orders, products}) => {
 
     const handleDelete = async(id) => {
         try{
-            let dev = process.env.NODE_ENV !== 'production';
-            let PROD_URL = process.env.PROD_URL;
-            let DEV_URL = process.env.DEV_URL;
-
             setPizzaList(pizzaList.filter((pizza) => pizza._id !== id));
-            await axios.delete(`${dev ? DEV_URL : PROD_URL}/api/products/` + id);
+            await axios.delete(`${process.env.SERVER}/api/products/` + id);
             
         }catch(err){
             console.log(err);
@@ -28,16 +24,12 @@ const Index = ({orders, products}) => {
         const currentStatus = item.status;
 
         try{
-            let dev = process.env.NODE_ENV !== 'production';
-            let PROD_URL = process.env.PROD_URL;
-            let DEV_URL = process.env.DEV_URL;
-
             if(currentStatus === 3){
                 setOrderList(orderList.filter((order) => order._id !== id));
-                await axios.delete(`${dev ? DEV_URL : PROD_URL}/api/orders/` + id);
+                await axios.delete(`${process.env.SERVER}/api/orders/` + id);
             }
             else{
-                const res = await axios.put(`${dev ? DEV_URL : PROD_URL}/api/orders/` + id, 
+                const res = await axios.put(`${process.env.SERVER}/api/orders/` + id, 
                             {
                                 status: currentStatus+1
                             }
@@ -138,11 +130,11 @@ export const getServerSideProps = async (context) => {
             }
         }
     }
-    let dev = process.env.NODE_ENV !== 'production';
-    let { DEV_URL, PROD_URL } = process.env;
+    // let dev = process.env.NODE_ENV !== 'production';
+    // let { DEV_URL, PROD_URL } = process.env;
 
-    const productRes = await axios.get(`${dev ? DEV_URL : PROD_URL}/api/products`);
-    const orderRes = await axios.get(`${dev ? DEV_URL : PROD_URL}/api/orders`);
+    const productRes = await axios.get(`${process.env.SERVER}/api/products`);
+    const orderRes = await axios.get(`${process.env.SERVER}/api/orders`);
 
     return {
         props: {

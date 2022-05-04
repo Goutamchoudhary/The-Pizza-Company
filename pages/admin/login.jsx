@@ -13,11 +13,8 @@ const Login = () => {
     const handleClick = async() => {
         
         try{
-            let dev = process.env.NODE_ENV !== 'production';
-            let PROD_URL = process.env.PROD_URL;
-            let DEV_URL = process.env.DEV_URL;
-
-            await axios.post(`${dev ? DEV_URL : PROD_URL}/api/login`, {username, password});
+            
+            await axios.post(`${process.env.SERVER}/api/login`, {username, password});
             router.push("/admin");
         }
         catch(err){

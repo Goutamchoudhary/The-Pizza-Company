@@ -20,6 +20,7 @@ if (!cached) {
 }
 
 async function dbConnect() {
+    
     if (cached.conn) {
         return cached.conn
     }
@@ -34,6 +35,7 @@ async function dbConnect() {
         })
     }
     cached.conn = await cached.promise
+    console.log("DB is connected");
     return cached.conn
 }
 
