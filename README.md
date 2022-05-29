@@ -40,7 +40,7 @@
 ## Demo
 ***
 
-### Live Deployed Website : [Link](https://the-pizza-company.vercel.app/)
+### Live Deployed Website : [https://the-pizza-company.vercel.app/](https://the-pizza-company.vercel.app/)
 ---
 
 ### Demo Video
