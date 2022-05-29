@@ -2,7 +2,7 @@
 
 
 ## Background
----
+***
 
   The Pizza Company is pizza delivery application where a customer can oder pizza and make online payment through paypal. It is built using NextJS 
   which is an open-source web development framework built on top of Node.js enabling React based web applications functionalities such as server-side rendering 
@@ -11,7 +11,7 @@
 **Note:** This application is deployed on Vercel Platform whose developers team created NextJS.
 
 ## Features Implemented
----
+***
 
 * Original Netflix UI replicated using ReactJS, React Hooks, Material UI, and advanced sass styling.
 * A register page and sign in page is created where a user can safely sign up and sign in with the valid email id.
@@ -28,6 +28,7 @@
 
 
 ## New features to be added
+***
 
 * Add user profile data, profile picture and personal data setup.
 * Add watchlist feature where user can add their favourite or to be watched movies/tvshows to their watchlist. 
@@ -37,7 +38,7 @@
 
 
 ## Demo
----
+***
 
 ### Live Deployed Website : [Link](https://the-pizza-company.vercel.app/)
 ---
@@ -45,7 +46,8 @@
 ### Demo Video
 ---
 
-![Demo-Video](https://res.cloudinary.com/du7od2uuc/video/upload/v1653816418/pizza-uploads/The_Pizza_Company_-_Personal_-_Microsoft_Edge_2022-05-29_14-51-52_lhh9iq.mp4)
+
+https://user-images.githubusercontent.com/68272020/170861587-08576edf-2b9d-477d-8f81-3ecf113721cb.mp4
 
 
 
