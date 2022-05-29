@@ -2,6 +2,7 @@
 
 
 ## Background
+---
 
   The Pizza Company is pizza delivery application where a customer can oder pizza and make online payment through paypal. It is built using NextJS 
   which is an open-source web development framework built on top of Node.js enabling React based web applications functionalities such as server-side rendering 
@@ -10,6 +11,7 @@
 **Note:** This application is deployed on Vercel Platform whose developers team created NextJS.
 
 ## Features Implemented
+---
 
 * Original Netflix UI replicated using ReactJS, React Hooks, Material UI, and advanced sass styling.
 * A register page and sign in page is created where a user can safely sign up and sign in with the valid email id.
@@ -35,29 +37,15 @@
 
 
 ## Demo
+---
 
 ### Live Deployed Website : [Link](https://the-pizza-company.vercel.app/)
+---
 
-### Images
+### Demo Video
+---
 
-**Register Page**
+![Demo-Video](https://res.cloudinary.com/du7od2uuc/video/upload/v1653816418/pizza-uploads/The_Pizza_Company_-_Personal_-_Microsoft_Edge_2022-05-29_14-51-52_lhh9iq.mp4)
 
-![Register](https://res.cloudinary.com/du7od2uuc/image/upload/v1653584262/Netflix-Clone/Github%20Readme%20Images/Netflix-Clone-RegisterPage_lwolmb.jpg)
 
-**Login Page**
-
-![Login](https://res.cloudinary.com/du7od2uuc/image/upload/v1653584262/Netflix-Clone/Github%20Readme%20Images/Netflix-Clone-LogInPage_jv8pxf.jpg)
-
-**Home Page**
-
-![Home1](https://res.cloudinary.com/du7od2uuc/image/upload/v1653585157/Netflix-Clone/Github%20Readme%20Images/netflix-home-new_gddhbf.jpg)
-![Home2](https://res.cloudinary.com/du7od2uuc/image/upload/v1653585202/Netflix-Clone/Github%20Readme%20Images/netflix-home-new-2_vqrl8m.jpg)
-
-**Movie Page**
-
-![Movie](https://res.cloudinary.com/du7od2uuc/image/upload/v1653584262/Netflix-Clone/Github%20Readme%20Images/Netflix-Clone-DemoPic-3_gauebp.jpg)
-
-**TVShows Page**
-
-![TVShows](https://res.cloudinary.com/du7od2uuc/image/upload/v1653584263/Netflix-Clone/Github%20Readme%20Images/Netflix-Clone-DemoPic-2_auqame.jpg)
 
