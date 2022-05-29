@@ -24,7 +24,7 @@ const Index = ({orders, products}) => {
         const currentStatus = item.status;
 
         try{
-            if(currentStatus === 3){
+            if(currentStatus >= 3){
                 setOrderList(orderList.filter((order) => order._id !== id));
                 await axios.delete(`${process.env.SERVER}/api/orders/` + id);
             }

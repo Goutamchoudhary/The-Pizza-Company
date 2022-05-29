@@ -2,7 +2,6 @@ import Head from 'next/head'
 import axios from 'axios'
 import Featured from '../components/Featured'
 import PizzaList from '../components/PizzaList'
-import styles from '../styles/Home.module.css'
 import Add from '../components/Add'
 import AddButton from '../components/AddButton'
 import { useState } from 'react'
@@ -16,7 +15,7 @@ export default function Home({pizzaList, admin}) {
   const [close, setClose] = useState(true);
 
   return (
-    <div className={styles.container}>
+    <div>
 
       <Head>
         <title>The Pizza Company</title>
@@ -24,10 +23,10 @@ export default function Home({pizzaList, admin}) {
         <link rel="icon" href="/favicon3.ico" />
       </Head>
 
-    <Featured/>
-    {admin && <AddButton setClose={setClose}/>}
-    <PizzaList pizzaList={pizzaList} />
-    {!close && <Add setClose={setClose}/>}
+      <Featured/>
+      {admin && <AddButton setClose={setClose}/>}
+      <PizzaList pizzaList={pizzaList} />
+      {!close && <Add setClose={setClose}/>}
     </div>
   )
 };

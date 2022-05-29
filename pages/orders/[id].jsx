@@ -5,7 +5,7 @@ import axios from "axios";
 
 const Order = ({ order }) => {
     const status = order.status;
-
+    const method = order.method;
     const statusClass = (index) => {
         if(index - status < 1) return styles.done
         if(index - status === 1) return styles.inProgress
@@ -84,7 +84,11 @@ const Order = ({ order }) => {
                     <div className={styles.totalText}>
                         <b className={styles.totalTextTitle}>Total: </b>${order.total}
                     </div>
-                    <button disabled className={styles.button}>PAID</button>
+                    { method == 0 ? (
+                        <button disabled className={styles.button}>To be Paid Via Cash</button>
+                    ) : (
+                        <button disabled className={styles.button}>PAID</button>
+                    )} 
                 </div>
             </div>
         </div>
