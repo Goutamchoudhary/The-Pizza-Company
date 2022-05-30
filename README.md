@@ -6,7 +6,8 @@
 
   The Pizza Company is a pizza delivery application where a customer can oder pizza and opt for cash on delivery method or make online payment through paypal.
   It is built using NextJS which is an open-source web development framework built on top of Node.js enabling React based web applications functionalities such 
-  as server-side rendering and generating static websites. NextJS is a complete full-stack framework. Redux is used in this application for state management.
+  as server-side rendering and generating static websites. NextJS is a complete full-stack framework. Redux is used in this application for state management. 
+  CSS is used for styling. JSONWEBTOKEN is used for authentication.
   
 
 **Note:** This application is deployed on Vercel Platform which is developed by the team behind Next.js.
@@ -16,7 +17,7 @@
 
 * The Home page contains the featured component where all the offers that are available will be displayed and the cutomer can slide 
   through it using the left arrow button and the right arrow button.
-* Below the featured component we have the list of all the Pizza's Veg or Non-Veg with the image of Pizza, their price and small description. 
+* Below the featured component we have the list of all the Pizza's Veg or Non-Veg with the Image of Pizza, its name, price and small description. 
   If any Pizza gets clicked the customer will be directed to the product page with the details of that clicked Pizza.
 * In the Product page the customer can select the size of the Pizza and the extra toppings, sauces and ingredients of their choices. The price will
   be updated based on the customer's extras list and the size of the Pizza. Also, the customer can increment/decrement the quantity of the selected Pizza
@@ -33,7 +34,12 @@
   which is Redux here.
 * The Orders Page contains the real-time details of the Placed Order. For example, which stage the order is currently at. And, on the right side the total amount paid
   and the payment method will be shown e.g., "PAID" or "To be Paid Via Cash".
-* Now, for admin 
+* Now, for admin, a login page is created where admin can login and can have access to the admin dashboard. After Sign In a token will be generated using jsonwebtoken   which authenticates whether the admin logged in or not and based on that admin dashboard will be accessible and. In the Admin Dashboard a list of all the Pizza's       will be there and admin can Edit/Delete any Pizza through REST APIs put/delete method. And, in the right part all the Orders will be there
+  which has been placed so far. Admin can put any Order to Next Stage by Clicking on the Next Stage Button. And if the Order has been delivered then that Order will
+  be removed from the Order's List.
+* Also, At the Home Page, I have created Add New Pizza Button by clicking on which admin can fill up the details of the Pizza which is to be added to 
+  the Products List.
+* All the CRUD operations for Products and Orders Object in the MongoDB Database are performed using REST APIs HTTP POST, GET, PUT and DELETE methods.
 
 
 ## New features to be added
