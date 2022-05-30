@@ -17,8 +17,10 @@
 
 * The Home page contains the featured component where all the offers that are available will be displayed and the cutomer can slide 
   through it using the left arrow button and the right arrow button.
-* Below the featured component we have the list of all the Pizza's Veg or Non-Veg with the Image of Pizza, its name, price and small description. 
-  If any Pizza gets clicked the customer will be directed to the product page with the details of that clicked Pizza.
+* Below the featured component we have the list of all the Pizza's Veg or Non-Veg with the Image of Pizza, its name, price and small description. This Pizza
+  list is displayed with the help of REST APIs HTTP GET method. Cloudinary Platform was used where the images were uploaded and are accessed through url when 
+  the Pizza document is created in the products Object in the MongoDB Database.
+* If any Pizza gets clicked the customer will be redirected to the product page with the details of that clicked Pizza.
 * In the Product page the customer can select the size of the Pizza and the extra toppings, sauces and ingredients of their choices. The price will
   be updated based on the customer's extras list and the size of the Pizza. Also, the customer can increment/decrement the quantity of the selected Pizza
   and then he can click on the Add to Cart button right next to it. The moment that Button gets clicked, the Cart image on the upper right corner will be shown as 
@@ -38,7 +40,7 @@
   which has been placed so far. Admin can put any Order to Next Stage by Clicking on the Next Stage Button. And if the Order has been delivered then that Order will
   be removed from the Order's List.
 * Also, At the Home Page, I have created Add New Pizza Button by clicking on which admin can fill up the details of the Pizza which is to be added to 
-  the Products List.
+  the Products List with the help of REST APIs HTTP POST method.
 * All the CRUD operations for Products and Orders Object in the MongoDB Database are performed using REST APIs HTTP POST, GET, PUT and DELETE methods.
 
 
