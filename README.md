@@ -32,7 +32,7 @@
   on Paypal for developers Portal using which this account can recieve money and make real payments successful. After making the payment the page will automatically
   be directed to the Orders Page. Once the customer arrives at the Orders Page, all the cart items will be removed. All this is done using the state management tool
   which is Redux here.
-* The Orders Page contains the real-time details of the Placed Order. For example, which stage the order is currently at. And, on the right side the total amount paid
+* The Orders Page contains the real-time details of the Placed Order. For example, which stage, the order is currently at. And, on the right side the total amount paid
   and the payment method will be shown e.g., "PAID" or "To be Paid Via Cash".
 * Now, for admin, a login page is created where admin can login and can have access to the admin dashboard. After Sign In a token will be generated using jsonwebtoken   which authenticates whether the admin logged in or not and based on that admin dashboard will be accessible and. In the Admin Dashboard a list of all the Pizza's       will be there and admin can Edit/Delete any Pizza through REST APIs put/delete method. And, in the right part all the Orders will be there
   which has been placed so far. Admin can put any Order to Next Stage by Clicking on the Next Stage Button. And if the Order has been delivered then that Order will
@@ -47,7 +47,8 @@
 
 * Add User Sign Up and Log In Features so that user can access its personal profile data.
 * Add Google Sign Up Option.
-* Make the Order button in the Navbar functional which will redirect the customer to its orders page.
+* Make the Order button in the Navbar functional which will redirect the customer to its Orders page where the Order details would be shown user specific.
+  This can be implemented using cookies.
 * Implement more features as a personal practice project.
 
 
