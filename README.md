@@ -4,7 +4,7 @@
 ## Background
 ***
 
-  The Pizza Company is a pizza delivery application where a customer can oder pizza and opt for cash on delivery method or make online payment through paypal.
+  The Pizza Company is a pizza delivery application where a customer can order pizza and opt for cash on delivery method or make online payment through paypal.
   It is built using NextJS which is an open-source web development framework built on top of Node.js enabling React based web applications functionalities such 
   as server-side rendering and generating static websites. NextJS is a complete full-stack framework. Redux is used in this application for state management. 
   CSS is used for styling. JSONWEBTOKEN is used for authentication.
